@@ -1,4 +1,5 @@
 import React from "react";
+import "../lib/modal.css"
 
 /**Render of the modal when the form is validated
  * @function Modal
