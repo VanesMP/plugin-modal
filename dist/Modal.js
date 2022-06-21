@@ -7,7 +7,7 @@ exports.Modal = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _jsxRuntime = require("react/jsx-runtime");
+require("../lib/modal.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19,18 +19,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Modal = function Modal(_ref) {
   var message = _ref.message,
       closeUp = _ref.closeUp;
-  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
-    id: "confirmation",
-    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
-      className: "textModal",
-      children: message
-    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
-      type: "button",
-      className: "btnClose",
-      onClick: closeUp,
-      children: "X"
-    })]
-  });
+  return /*#__PURE__*/_react.default.createElement("div", {
+    id: "confirmation"
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "textModal"
+  }, message), /*#__PURE__*/_react.default.createElement("button", {
+    type: "button",
+    className: "btnClose",
+    onClick: closeUp
+  }, "X"));
 };
 
 exports.Modal = Modal;

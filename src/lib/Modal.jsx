@@ -1,5 +1,5 @@
 import React from "react";
-import "../lib/modal.css"
+import "../lib/modal.css";
 
 /**Render of the modal when the form is validated
  * @function Modal
@@ -16,4 +16,4 @@ export const Modal = ({ message, closeUp }) => {
       </button>
     </div>
   );
-}
+};
